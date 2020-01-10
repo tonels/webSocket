@@ -1,0 +1,11 @@
+server: 
+  port: 8080
+  servlet:
+    context-path: /webSocket
+    
+spring:
+  mvc: 
+    view:
+      suffix: .html
+  jmx: 
+    default-domain: ${server.servlet.context-path}
